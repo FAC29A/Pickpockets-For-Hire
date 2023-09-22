@@ -10,9 +10,8 @@ Another essential idea by @Luciensday & @JasonWarrenUK
 
 - [x] Create a task tracker for the Pickpocket website on Obsidian & port it to the GitHub README.MD
 - [x] Read & process brief & acceptance criteria for the Pickpocket website
-- Read & process all help links for the Pickpocket website
-	- [ ] Read the user stories info link for the Pickpocket website
-	- [ ] Read the [GitHub project board](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) documentation
+- [ ] Read the user stories info link for the Pickpocket website
+- [ ] Read the [GitHub project board](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) documentation
 
 ### Essential Tasks
 
