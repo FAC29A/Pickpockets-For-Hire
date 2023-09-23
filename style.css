@@ -1,0 +1,94 @@
+nav > ul {list-style-type: none;}
+
+/* Initial Semantic Layout Tools */
+  .placeholder {
+    border-color: lightgrey;
+    text-align: center;
+  }
+
+  /* Element Function */
+    .page {
+      border-style: double;
+      padding: 1rem;}
+    .section {
+      margin: 1rem;
+      border-style: solid;
+      border-color: indianred;
+      padding: 1rem;
+    }
+    .item {
+      display: block;
+      margin: 1rem;
+      border-style: dashed;
+      border-color:lightcoral;
+      padding: 0.5rem;
+    }
+    .component{
+      display: block;
+      margin: auto;
+      border-style: dotted;
+      border-color: lightsalmon;
+      padding: 1rem;
+    }
+
+  /* Element Level */
+    .l0 {
+      margin: 1rem;
+      border-width: 16px;
+      padding: 0.5rem;
+    }
+    .l1 {
+      margin: 3rem, 1.5rem;
+      border-width: 8px;
+    }
+    .l2 {border-width: 4px;}
+    .l3 {border-width: 2px;}
+    .l4 {border-width: 1px;}
+    .l5 {border-width: 0.5px;}
+    .l6 {border-width: 0px;}
+
+/* Layout Primitives */
+    /* Flex */
+      /* Parent */
+        .row_wrapYes {
+          border-color: crimson;
+          /* Flex */
+          display: flex;
+          flex-flow: row wrap;
+        }
+        .row_wrapNo {
+          border-color: darkred;
+          /* Flex */
+          display: flex;
+          flex-flow: row nowrap;
+        }
+
+        .justBetween {
+          justify-content: space-between;
+          align-content: stretch;
+          align-items: stretch;
+        }
+        .justCentre {
+          justify-content: space-around;
+          align-content: stretch;
+          align-items: stretch;
+        }
+        .justEnd {
+          justify-content: flex-end;
+          align-content: stretch;
+          align-items: stretch;
+        }
+
+      /* Child */
+        .inRow_2Tight {
+          margin: 1rem auto;
+          flex: 1 1 40%;
+        }
+        .inRow_2Loose {
+          margin: 1rem auto;
+          flex: 0 1 40%;
+        }
+        .inRow_3Loose {
+          margin: 1rem auto;
+          flex: 0 1 30%;
+        }
