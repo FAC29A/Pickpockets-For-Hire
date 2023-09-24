@@ -1,3 +1,55 @@
+
+* {
+  box-sizing: border-box;
+}
+/* customised width */
+.center {
+  max-width: 30rem;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.width-sm {
+  max-width: 20rem; 
+}
+
+.width-lg {
+  max-width: 40rem; 
+}
+
+.width-xl {
+  max-width: 60rem; 
+}
+/* stack: control vertical space */
+.stack-sm > * + * {
+  margin-top: 1rem
+}
+
+.stack-md > * + * {
+  margin-top: 1rem
+}
+
+.stack-md > * + * {
+  margin-top: 2rem
+}
+
+.stack-lg > * + * {
+  margin-top: 2rem
+}
+
+.stack-xl > * + * {
+  margin-top: 2rem
+}
+
+
+
+
+
+
+
+/* Below are Jason's css setup  */
+
+
 nav > ul {list-style-type: none;}
 
 /* Initial Semantic Layout Tools */
