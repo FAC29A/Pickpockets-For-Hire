@@ -137,9 +137,6 @@ h1 {
   color:var(--black)
 }
 
-h2 {
-  font-size: 1.4rem 
-}
 
 h3 {
   font-size: 1.8rem;
@@ -206,15 +203,59 @@ main {
   color: var(--black)
 }
 
+.content-text h2 {
+  font-size: 1.4rem 
+}
+
 .content-text p {
   color: var(--white)
 }
 
 .associate-section {
+  padding: 2rem; 
   background-color: red;
 }
 
 
+.associate-section h2 {
+  color: white; 
+  text-align: center
+}
+
+.associate-gallery {
+  display: flex; 
+  gap: 2rem
+}
+
+.associate-card-elements {
+background-color: white; 
+position: relative; 
+
+
+}
+
+.associate-card-elements > * {
+  
+  display: block; 
+} 
+
+
+
+.associate-pocket-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  z-index: 1; 
+}
+
+.associate-text{
+  position: absolute;
+  top: 50%; 
+  left: 56%;
+  transform: translate(-50%, -50%);transform: translate(-50%, -50%);
+  z-index: 2; 
+}
 
 
 
