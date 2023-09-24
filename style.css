@@ -4,7 +4,7 @@
 }
 
 
-/* colour template */
+/* colour root template */
 :root {
   --inida-yellow: #967243;
   --white: #ffffff; 
@@ -14,7 +14,7 @@
   --pipe-black: #22201C; 
   --black: #141513;
   --blush: #AD807B; 
-  --earthy-red:#7D3C36; 
+  --red:#7D3C36; 
   --violet: #694C60;
 }
 
@@ -104,13 +104,13 @@
 nav > ul {list-style-type: none;}
 
 /* Initial Semantic Layout Tools */
-  .placeholder {
+  /* .placeholder {
     border-color: lightgrey;
     text-align: center;
-  }
+  } */
 
   /* Element Function */
-    .page {
+    /* .page {
       border-style: double;
       padding: 1rem;}
     .section {
@@ -118,24 +118,24 @@ nav > ul {list-style-type: none;}
       border-style: solid;
       border-color: var(--inida-yellow);
       padding: 1rem;
-    }
-    .item {
+    } */
+    /* .item {
       display: block;
       margin: 1rem;
       border-style: dashed;
       border-color:lightcoral;
       padding: 0.5rem;
-    }
-    .component{
+    } */
+    /* .component{
       display: block;
       margin: auto;
       border-style: dotted;
       border-color: lightsalmon;
       padding: 1rem;
-    }
+    } */
 
   /* Element Level */
-    .l0 {
+    /* .l0 {
       margin: 1rem;
       border-width: 16px;
       padding: 0.5rem;
@@ -148,21 +148,21 @@ nav > ul {list-style-type: none;}
     .l3 {border-width: 2px;}
     .l4 {border-width: 1px;}
     .l5 {border-width: 0.5px;}
-    .l6 {border-width: 0px;}
+    .l6 {border-width: 0px;} */
 
 /* Layout Primitives */
     /* Flex */
-      /* Parent */
+      /* Parent
         .row_wrapYes {
-          border-color: crimson;
+          border-color: crimson; */
           /* Flex */
-          display: flex;
+          /* display: flex;
           flex-flow: row wrap;
         }
         .row_wrapNo {
-          border-color: darkred;
+          border-color: darkred; */
           /* Flex */
-          display: flex;
+          /* display: flex;
           flex-flow: row nowrap;
         }
 
@@ -180,10 +180,10 @@ nav > ul {list-style-type: none;}
           justify-content: flex-end;
           align-content: stretch;
           align-items: stretch;
-        }
+        } */
 
       /* Child */
-        .inRow_2Tight {
+        /* .inRow_2Tight {
           margin: 1rem auto;
           flex: 1 1 40%;
         }
@@ -194,4 +194,4 @@ nav > ul {list-style-type: none;}
         .inRow_3Loose {
           margin: 1rem auto;
           flex: 0 1 30%;
-        }
+        } */
