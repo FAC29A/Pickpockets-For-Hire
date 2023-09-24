@@ -20,6 +20,8 @@
 .width-xl {
   max-width: 60rem; 
 }
+
+
 /* stack: control vertical space */
 .stack-sm > * + * {
   margin-top: 1rem
@@ -41,6 +43,37 @@
   margin-top: 2rem
 }
 
+/* Flex template */
+.row{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1rem; 
+  align-items: center; 
+}
+
+.align-start{
+  align-items: start;
+}
+
+.align-end{
+  align-items: end; 
+}
+
+.justify-end{
+  justify-content: end;
+}
+
+
+/* grid template  */
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, min-max(10rem 1fr));
+  gap: 1rem;
+}
+
+
+
+/* colour  */
 
 
 
