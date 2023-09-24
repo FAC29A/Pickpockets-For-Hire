@@ -2,7 +2,23 @@
 * {
   box-sizing: border-box;
 }
-/* customised width */
+
+
+/* colour template */
+:root {
+  --inida-yellow: #967243;
+  --white: #ffffff; 
+  --light-grey: #E0DAD1;
+  --grey: #A19D96; 
+  --dark-grey:#47443D; 
+  --pipe-black: #22201C; 
+  --black: #141513;
+  --blush: #AD807B; 
+  --earthy-red:#7D3C36; 
+  --violet: #694C60;
+}
+
+/* customised width template */
 .center {
   max-width: 30rem;
   margin-left: auto; 
@@ -22,7 +38,7 @@
 }
 
 
-/* stack: control vertical space */
+/* stack: control vertical space template */
 .stack-sm > * + * {
   margin-top: 1rem
 }
@@ -73,7 +89,9 @@
 
 
 
-/* colour  */
+
+
+
 
 
 
@@ -98,7 +116,7 @@ nav > ul {list-style-type: none;}
     .section {
       margin: 1rem;
       border-style: solid;
-      border-color: indianred;
+      border-color: var(--inida-yellow);
       padding: 1rem;
     }
     .item {
