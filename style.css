@@ -1,6 +1,12 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'New Tegomin', serif;
+
+}
+
+html {
+  font-size: 10px; 
 }
 
 
@@ -34,8 +40,10 @@
 }
 
 .width-xl {
-  max-width: 60rem; 
+  max-width: 80rem; 
 }
+
+
 
 
 /* stack: control vertical space template */
@@ -63,7 +71,7 @@
 .row{
   display: flex;
   flex-wrap: wrap; 
-  gap: 1rem; 
+  gap: 2rem; 
   align-items: center; 
 }
 
@@ -80,6 +88,8 @@
 }
 
 
+
+
 /* grid template  */
 .grid { 
   display: grid; 
@@ -87,6 +97,58 @@
   gap: 1rem;
 }
 
+
+
+body{
+background-color: var(--light-grey);
+}
+
+nav > ul {list-style-type: none;}
+
+ul > li > a {
+  text-decoration: none;
+  color:var(--inida-yellow); 
+  font-size: 1.4rem ; 
+}
+
+
+h1 {
+  font-size: 2.4rem; 
+  color:var(--black)
+}
+
+.hero-p {
+  font-size: 1.4rem;
+  color: var(--inida-yellow)
+}
+
+.hero {
+  height: 80vh; 
+  position: relative;
+}
+
+.hero-text{
+  position: absolute; 
+  top: 8%;
+  left: 50% 
+}
+
+.hand {
+  position: absolute; 
+  top:20%; 
+  left:-80px
+}
+.slit-top {
+  position: absolute; 
+  top: 40%; 
+  left: 65%; 
+  z-index: -1;
+}
+.slit-bottom {
+  position: absolute; 
+  top: 40%; 
+  left: 65%
+}
 
 
 
@@ -101,7 +163,7 @@
 /* Below are Jason's css setup  */
 
 
-nav > ul {list-style-type: none;}
+
 
 /* Initial Semantic Layout Tools */
   /* .placeholder {
