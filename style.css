@@ -215,49 +215,61 @@ main {
 
 .associate-section {
   padding: 2rem; 
-  background-color: red;
+  border: 2px solid red;
   position: relative; 
 }
 
-.associate-section h2, .enquiry-section h2, .contact-section h2{
-  text-align: center
-}
+.associate-section h2,
+.enquiry-section h2,
+.contact-section h2 {text-align: center;}
 
-.associate-section h2 {
-  color: white
-}
+.associate-section h2 {color: white}
 
 /* An issue here.  .row on html  doesn't work that why i put the display flex here */
 .associate-gallery {
-  height: 500px; 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  gap: 2rem;  
-  background-color: blue; 
+
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  
+  justify-items: center;
+  align-items: center;
+
+  justify-content: space-between;
+  justify-items: center;
+
+  border: 2px solid blue;
+  height: auto;
 }
 
+.associateHolder {
+  border: 2px dashed black;
+  flex: 0 0 33%;
 
-
-.associate-card-1 {
-position: relative; 
 }
 
-.associate-pocket {
-  position: absolute;
+.associate {border: 2px dotted black;}
+
+.associateCard {
+  position: relative;
+  transform: translate(0, 40%);
+}
+
+.associatePocket {
+  position: relative;
   left: 0; 
-  transform: translate(0, 40%); 
+  transform: translate(0, 40%);
   z-index: 1; 
 }
 
-.associate-text{
-  position: absolute;
+.associateText{
+  position: relative;
   transform: translate(30%, -80%);
   z-index: 2
 }
 
 /* enquiry section css  */
 .enquiry-section {
-  background-color: green;
+  border: 2px solid green;
   padding: 2rem; 
 }
 
@@ -336,7 +348,7 @@ input[type="checkbox"] {
 
 /* contact-section css */
 .contact-section{
-  background-color: yellowgreen; 
+  border: 2px solid yellowgreen; 
   padding: 2rem 
 }
 
@@ -348,7 +360,7 @@ input[type="checkbox"] {
 
 footer {
   text-align: center;
-  background-color: lightgreen;
+  border: 2px solid lightgreen;
 }
 
 
