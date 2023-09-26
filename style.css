@@ -2,7 +2,8 @@
 * {
   box-sizing: border-box;
   font-family: 'New Tegomin', serif;
-
+  margin:0; 
+  padding: 0; 
 }
 
 html {
@@ -39,12 +40,16 @@ html {
   max-width: 40rem; 
 }
 
+
+
 .width-xl {
-  max-width: 80rem; 
+  max-width: 90rem; 
 }
 
+
+
 .width-max {
-  max-width: 100rem; 
+  max-width: 150rem; 
 }
 
 
@@ -123,6 +128,14 @@ body{
 background-color: var(--light-grey);
 }
 
+header{
+  height: 90vh; 
+}
+
+nav {
+  padding-top: 2rem ;
+}
+
 nav > ul {list-style-type: none;}
 
 ul > li > a {
@@ -150,32 +163,74 @@ h3 {
 }
 
 .hero {
-  height: 80vh; 
+  height: calc(90vh - 4rem); 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; 
+  justify-content:flex-end; 
+  overflow:hidden; 
+ 
+  
+  background-color: green;
+}
+
+#hero-grouping-div {
+  background-color: red;  
+  height: 90%; 
+  width:80%; 
+  padding: 0;
   position: relative;
+
 }
 
 .hero-text{
   position: absolute; 
-  top: 8%;
-  left: 50% 
+  bottom: 67%;
+  left: 10%; 
+  background-color: purple
 }
 
+.hand-container {
+  background-color: pink;
+  position: absolute;
+  width: calc(100% - 10%); 
+  height: 70%; 
+  bottom: 0;  
+  left: 10%; 
+  object-fit:cover; 
+  
+}
 .hand {
   position: absolute; 
-  top:20%; 
-  left:-80px
+  max-height: 100%; 
+  max-width: 100%; 
+  block-size: auto; 
+  object-fit:cover; 
+  bottom: 0; 
+  right: 0; 
 }
-.slit-top {
+
+ .slit-top-container, .slit-bottom-container{
   position: absolute; 
-  top: 40%; 
-  left: 65%; 
-  z-index: -1;
+  background-color: green; 
+  width: clamp(100px, 50%, 150px); 
+  height: clamp(100px, 50%, 150px); 
+  bottom: 10%; 
+  left: 15%; 
 }
-.slit-bottom {
-  position: absolute; 
-  top: 40%; 
-  left: 65%
+.slit-top, .slit-bottom{
+  position: absolute;  
+  max-width: 100%; 
+  max-height: 100%; 
+  block-size: auto; 
+  object-fit: contain;
+  bottom:0; 
+  
 }
+
+
+
+
 
 
 main {
@@ -229,7 +284,7 @@ main {
 
 /* An issue here.  .row on html  doesn't work that why i put the display flex here */
 .associate-gallery {
-  height: 500px; 
+  
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
   gap: 2rem;  
