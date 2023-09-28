@@ -32,54 +32,21 @@ html {
   margin-right: auto; 
 }
 
-.width-sm {
-  max-width: 20rem; 
-}
-
-.width-lg {
-  max-width: 40rem; 
-}
-
-
-
-.width-xl {
-  max-width: 90rem; 
-}
-
-
-
+.width-sm {max-width: 20rem;}
+.width-lg {max-width: 40rem;}
+.width-xl {max-width: 90rem;}
 .width-max {
   max-width: 100vw; 
   width: 100vw; 
 }
 
-
-
-
 /* stack: control vertical space template */
-.stack-sm > * + * {
-  margin-top: 0
-}
-
-.stack-md > * + * {
-  margin-top: 1rem
-}
-
-.stack-md > * + * {
-  margin-top: 2rem
-}
-
-.stack-lg > * + * {
-  margin-top: 2rem
-}
-
-.stack-xl > * + * {
-  margin-top: 2rem
-}
-
-.stack-xxl > * + * {
-  margin-top: 5rem
-}
+.stack-sm > * + * {margin-top: 0;}
+.stack-md > * + * {margin-top: 1rem;}
+.stack-md > * + * {margin-top: 2rem;}
+.stack-lg > * + * {margin-top: 2rem;}
+.stack-xl > * + * {margin-top: 2rem;}
+.stack-xxl > * + * {margin-top: 5rem;}
 
 /* Flex template */
 .row{
@@ -326,11 +293,12 @@ h3 {
 
 .associate-section h2 {color: white}
 
-/* An issue here.  .row on html  doesn't work that why i put the display flex here */
 .associate-gallery {
   display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
-  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  gap: 12px;
 
   justify-items: center;
   align-items: center;
@@ -340,33 +308,38 @@ h3 {
 
   border: 2px solid blue;
   height: auto;
- 
 }
 
 .associateHolder {
   border: 2px dashed black;
-  flex: 0 0 33%;
-
+  flex: 0 0 30%;
+  padding: 1rem;
+  max-height: 375px;
 }
 
-.associate {border: 2px dotted black;}
+.associate {width: 250px;}
 
  .associateCard {
    position: relative;
-   transform: translate(0, 40%);
+   transform: translate(22.5%, 25%);
 }
 
 .associatePocket {
   position: relative;
   left: 0; 
-  transform: translate(0, 40%);
+  transform: translate(22.5%, -10%);
   z-index: 1; 
 }
 
 .associateText{
   position: relative;
-  transform: translate(30%, -80%);
+  transform: translate(0%, -250%);
   z-index: 2
+}
+
+.associateText > h3,
+.associateText > p {
+  text-align: center;
 }
 
 /* enquiry section css  */
