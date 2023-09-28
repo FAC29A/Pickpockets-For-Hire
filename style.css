@@ -128,6 +128,7 @@ html {
 
 body{
 background-color: var(--light-grey);
+
 }
 
 
@@ -262,10 +263,36 @@ h3 {
 
 .content-element {
   display: grid; 
-  grid-template-columns: 2fr 1fr; 
+  grid-template-areas: 
+    "text1 text1 image1"
+    "image2 text2 text2"; 
+  grid-template-columns: repeat(3, 1fr); 
   gap: 2rem; 
   
 }
+
+.content-element > .text-1 {
+  grid-area: text1; 
+  text-align: right;
+  padding: 3rem; 
+}
+
+.content-element > .image-1 {
+  grid-area: image1; 
+}
+
+.content-element > .text-2 {
+  grid-area: text2;
+  padding: 3rem; 
+}
+
+.content-element > .image-2 {
+  grid-area: image2;
+  background-color: red;
+}
+
+
+
 
 
 .content-element > .content-text > p {
