@@ -274,8 +274,9 @@
        <p>NOT YET, BE PATIENT INNIT</p>
     </section>
 
+  <div class="brown-background">
     <!--Enquiries-->
-    <section class="center width-xl stack-xl pad2">
+    <section class="enquiry-section center width-xl stack-xl pad2">
       <h2>Enquiries</h2>
       
       <form action="/" alt="" class="center width-md stack-md">
@@ -287,12 +288,16 @@
         
         <fieldset class="stack-md">
           <legend>Service Required</legend>
-
-          <input type="radio" id="choice1" name="service-required" value="pickpocketing"/>
-          <label for="choice1">Pickpocketing</label>
-
-          <input type="radio" id="choice2" name="service-required" value="other"/>
-          <label for="choice2">Other</label>
+          <div class="radio-label-layout">
+            <div>
+              <input type="radio" id="choice1" name="service-required" value="pickpocketing"/>
+              <label for="choice1">Pickpocketing</label>
+            </div>
+            <div>
+              <input type="radio" id="choice2" name="service-required" value="other"/>
+              <label for="choice2">Other</label>
+          </div>
+        </div>
         </fieldset>
 
         <label for="message">Message</label>
@@ -303,8 +308,8 @@
     </section>
 
     <!--Address-->
-    <section class="center width-xl stack-xl pad2">
-      <h2>contact</h2>
+    <section class="address-section center width-xl stack-xl pad2">
+      <h2>Contact</h2>
 
       <div class="contact-text center">
         <p>ADDRESS STUFF, DO LATER</p>
@@ -312,6 +317,7 @@
         <p>Phone stuff, do later </p>
       </div>
     </section>
+  </div>
   </main>
 
   <footer class="center width-xl stack-lg">
