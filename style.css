@@ -1,9 +1,13 @@
+/*
+  LAYOUT DEBUG
+  * {border: 1px double black;}
+*/
+
 * {
   box-sizing: border-box;
   font-family: 'New Tegomin', serif;
   margin:0; 
   padding: 0;
-  border: 1px double black;
 }
 
 html {font-size: 10px;}
