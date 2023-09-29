@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="stack-xl">
   <header>
     <!-- navbar -->
     <nav class="row justify-end center width-xl">
@@ -67,11 +67,9 @@
     </section>
   </header>
  
-
-  <!--Main-->
-  <main >
-    <!-- content section -->
-    <section class="content-section center width-xl stack-xxl">
+  <main class="stack-lg">
+    <!--About-->
+    <section class="content-section center width-xl stack-xl pad3">
       <!-- article 1: about me  -->
       <article class="content-element">
         <div class="content-text text-1 stack-xxl" >
@@ -121,7 +119,7 @@
     </section>
     
     <!--Associates-->
-    <section class="associate-section">
+    <section class="associate-section center width-xl stack-xl pad2">
       <h2 class="center">Associates</h2>
       <!--Gallery-->
       <div class="associate-gallery ">
@@ -271,61 +269,64 @@
       </div>
     </section>
 
-    <!-- Guildmasters -->
-   
-    <section class="guildmasters-section">
-       <!-- add the code of guiildmaster after solved the issues of associaste section  -->
+    <!--Guildmasters-->
+    <section class="guildmasters-section center width-xl stack-xl">
+       <p>NOT YET, BE PATIENT INNIT</p>
     </section>
 
-    <!-- Enquiries -->
-    <section class="enquiry-section center width-lg stack-xl">
+    <!--Enquiries-->
+    <section class="center width-xl stack-xl pad2">
       <h2>Enquiries</h2>
-        <!-- Form -->
-        <form action="/" alt="" class="stack-md">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name"/>
-              <label for="email" >Email</label>
-              <input type="email" id="email"name="email"/>
-              <fieldset class="stack-md">
-              <legend>Service Required</legend>
-                <input type="radio" id="choice1" name="service-required" value="pickpocketing"/>
-                <label for="choice1">Pickpocketing</label>
-                <input type="radio" id="choice2" name="service-required" value="other"/>
-                <label for="choice2">Other</label>
-            </fieldset>
-            <label for="message">Message</label>
-            <textarea id="message">
-            </textarea>
-            <button type="submit">Submit</button>
-          </form>
+      
+      <form action="/" alt="" class="center width-md stack-md">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"/>
+
+        <label for="email" >Email</label>
+        <input type="email" id="email"name="email"/>
+        
+        <fieldset class="stack-md">
+          <legend>Service Required</legend>
+
+          <input type="radio" id="choice1" name="service-required" value="pickpocketing"/>
+          <label for="choice1">Pickpocketing</label>
+
+          <input type="radio" id="choice2" name="service-required" value="other"/>
+          <label for="choice2">Other</label>
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
 
-        <!-- Details & Socials -->
-        <section class="contact-section center width-lg stack-xl">
-            <h2>contact</h2>
-            <div class="contact-text center">
-              <p>ADDRESS STUFF, DO LATER</p>
-              <p>Phone stuff, do later </p>
-            </div>
-            <div>
-              <p>SOSHY MEEDS STUFF, DO LATER</p>
-            </div>
-        </section>
+    <!--Address-->
+    <section class="center width-xl stack-xl pad2">
+      <h2>contact</h2>
+
+      <div class="contact-text center">
+        <p>ADDRESS STUFF, DO LATER</p>
+        
+        <p>Phone stuff, do later </p>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="center width-xl">
+  <footer class="center width-xl stack-lg">
     <h2>footer title </h2>
-    <div class="social-media-group center width-lg row justify-center">
+    
+    <div class="social-media-group center width-md row justify-center">
       <p> instagram </p>
       <p> facebook </p>
       <p> tiktok </p>
     </div>
+    
     <p>More footer text</p>
   </footer>
 
-
-    <!-- Remember to defer JS -->
-    <script src="main.js"></script>
+  <!-- Remember to defer JS -->
+  <script src="main.js"></script>
 </body>
 </html>
