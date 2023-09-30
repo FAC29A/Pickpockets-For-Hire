@@ -33,8 +33,10 @@ html {font-size: 10px;}
   margin-right: auto; 
 }
 
+
 .pad2 {padding: 2rem;}
 .pad3 {padding: 3rem;}
+.pad0Top {padding-top: :0;}
 .pad5Top {padding-top: 5rem;}
 
 .width-sm {max-width: 20rem;}
@@ -339,6 +341,12 @@ input[type="checkbox"] {
 .contact-text {text-align: center;}
 
 /* footer css */
+#black-background {
+  height: 5rem; 
+  width:100%; 
+  background-color: var(--black);
+}
+
 footer {
   text-align: center;
   padding: 2rem; 
