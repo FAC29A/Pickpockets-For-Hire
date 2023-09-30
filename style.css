@@ -339,4 +339,8 @@ input[type="checkbox"] {
 .contact-text {text-align: center;}
 
 /* footer css */
-footer {text-align: center;}
+footer {
+  text-align: center;
+  padding: 2rem; 
+  height: 30rem ; 
+  }
