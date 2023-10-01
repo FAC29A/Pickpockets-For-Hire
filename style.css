@@ -203,11 +203,10 @@ h3 {font-size: 1.8rem;}
 .content-text p {color: var(--white);}
 
 .associate-section h2,
-.enquiry-section h2,
-.address-section h2 {text-align: center;}
-
-.enquiry-section h2,
-.address-section h2 {color: var(--inida-yellow);}
+#enquiry-section h2,
+#contact h2 {text-align: center;}
+#enquiry-section h2,
+#contact h2 {color: var(--inida-yellow);}
 
 /* Associate section css */
 .associate-section {position: relative;}
@@ -257,7 +256,7 @@ h3 {font-size: 1.8rem;}
 }
 
 /* enquiry section css  */
-.brown-background{
+#brown-background{
   background-color: var(--pipe-black);
   color: var(--white)
 }
@@ -325,7 +324,7 @@ input[type="checkbox"] {
   
 
 
-  .radio-label-layout{
+  #radio-label-layout{
     display: flex; 
     justify-content: space-evenly;
     padding: 0.8rem 
