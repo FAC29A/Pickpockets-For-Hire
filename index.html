@@ -19,16 +19,16 @@
     <nav class="row justify-end center width-xl">
       <ul class="row">
         <li>
-          <a href="#about-us">About Us</a>
+          <a href="#about-us">Credentials</a>
+        </li>
+        <li>
+          <a href="#associates">Associates</a>
         </li>
         <li>
           <a href="#enquiries">Enquiries</a>
         </li>
         <li>
-          <a href="associates">Associates</a>
-        </li>
-        <li>
-          <a href="#guildmasters">Guildmasters</a>
+          <a href="#contact">Correspondence</a>
         </li>
       </ul>
     </nav>
@@ -69,7 +69,7 @@
  
   <main class="stack-lg">
     <!--About-->
-    <section class="content-section center width-xl stack-xl pad3">
+    <section class="content-section center width-xl stack-xl pad3" id="about-us">
       <!-- article 1: about me  -->
       <article class="content-element">
         <div class="content-text text-1 stack-xxl" >
@@ -119,7 +119,7 @@
     </section>
     
     <!--Associates-->
-    <section class="associate-section center width-xl stack-xl pad2">
+    <section class="associate-section center width-xl stack-xl pad2" id="associates">
       <h2 class="center">Associates</h2>
       <!--Gallery-->
       <div class="associate-gallery ">
@@ -269,28 +269,23 @@
       </div>
     </section>
 
-    <!--Guildmasters-->
-    <section class="guildmasters-section center width-xl stack-xl">
-       <p>NOT YET, BE PATIENT INNIT</p>
-    </section>
-
   <div id="brown-background">
     <!--Enquiries-->
-    <section id="enquiry-section" class=" center width-xl stack-xl pad2">
+    <section class="center width-xl stack-xl pad2" id="enquiries">
       <h2>Enquiries</h2>
       
-      <form action="/" alt="" class="center width-md stack-md">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name"/>
+      <form class="center width-md stack-md">
+        <label for="name">Epithet</label>
+        <input type="text" id="name" name="name" required/>
 
-        <label for="email" >Email</label>
-        <input type="email" id="email"name="email"/>
+        <label for="email">Mechanical Pigeon</label>
+        <input type="email" id="email"name="email" required/>
         
         <fieldset class="stack-md">
           <legend>Service Required</legend>
           <div id="radio-label-layout">
             <div>
-              <input type="radio" id="choice1" name="service-required" value="pickpocketing"/>
+              <input type="radio" id="choice1" name="service-required" value="pickpocketing" required/>
               <label for="choice1">Pickpocketing</label>
             </div>
             <div>
@@ -303,13 +298,13 @@
         <label for="message">Message</label>
         <textarea id="message"></textarea>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Enjoin</button>
       </form>
     </section>
 
     <!--Address-->
-    <section id="contact" class="center width-xl stack-xl pad2">
-      <h2>Contact</h2>
+    <section class="center width-xl stack-xl pad2" id="contact">
+      <h2>Correspondence</h2>
 
       <div class="contact-text center">
         <p>ADDRESS STUFF, DO LATER</p>
