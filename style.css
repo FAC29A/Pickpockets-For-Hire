@@ -4,13 +4,13 @@
 
 * {
   box-sizing: border-box;
-  font-family: "New Tegomin", serif;
+  
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /* colour root template */
@@ -25,7 +25,10 @@ html {
   --blush: #ad807b;
   --red: #7d3c36;
   --violet: #694c60;
+  --playfair: "Playfair Display", serif;
+  --tegomin: "New Tegomin", serif
 }
+
 
 /* customised width template */
 .center {
@@ -43,8 +46,8 @@ html {
 .pad0Top {
   padding-top: 0rem;
 }
-.pad5Top {
-  padding-top: 5rem;
+.pad1Top {
+  padding-top: 1rem;
 }
 
 .pad9Top {
@@ -159,21 +162,28 @@ ul > li > a {
   text-decoration: none;
   color: var(--inida-yellow);
   font-size: 1.4rem;
+  font-family: var(--tegomin);
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 
 #hero-text > h1 {
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   color: var(--black);
+  font-family: var(--playfair);
+  font-weight: 900;
+
+
+
 }
 
 #hero-text > p {
   font-size: 1.4rem;
   color: var(--inida-yellow);
+  font-style:italic
 }
 
 #hero {
@@ -242,7 +252,6 @@ h3 {
   height: 17rem;
   overflow: hidden;
   border-radius: 50%;
- 
   place-self:center; 
 }
 
@@ -252,21 +261,23 @@ h3 {
     "text1 text1 image1"
     "image2 text2 text2";
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap:2rem;
 }
 
 .content-element > #text-1 {
   grid-area: text1;
-  text-align: right;
+  text-align: center; 
   padding: 3rem;
 }
 
 .content-element > #image-1 {
   grid-area: image1;
+
 }
 
 .content-element > #text-2 {
   grid-area: text2;
+  text-align: center; 
   padding: 3rem;
 }
 
@@ -274,27 +285,58 @@ h3 {
   grid-area: image2;
 }
 
-.content-element > .content-text > p {
-  font-size: 1.4rem;
+
+
+.associate-section h2:before, .associate-section h2:after {
+  content: "";
+  display: inline-block;
+  width: 30%;
+  margin: 0 .5em 0 -30%;
+  vertical-align: middle;
+  border-bottom: 1.5px solid 
+}
+.associate-section h2:after {
+  margin: 0 -30% 0 .5em;
 }
 
-.content-text h2,
-.content-text h3 {
-  color: var(--black);
+.content-text h2
+ {
+  color: var(--pipe-black);
 }
 .content-text h2 {
-  font-size: 1.4rem;
+  font-size: 2.2rem;
+  font-family: var(--playfair);
+  font-weight:600; 
+  font-style: italic;
 }
-.content-text p {
-  color: var(--white);
+
+.content-text p  {
+  color: var(--light-grey);
+  font-size: 1.4rem;
+  font-family: var(--playfair);
+  font-weight:300; 
+  
+}
+
+.strong {
+  color: var(--inida-yellow) !important;
+  font-family: var(--playfair) !important;
+  font-weight:800 !important;
+  
 }
 
 .associate-section h2,
-#enquiry-section h2,
+#enquiries h2,
 #contact h2 {
   text-align: center;
+  font-size: 2rem;
+  font-family: var(--tegomin);
+  padding:2rem 
 }
-#enquiry-section h2,
+
+
+
+#enquiries h2,
 #contact h2 {
   color: var(--inida-yellow);
 }
@@ -311,45 +353,37 @@ h3 {
 .associate-gallery {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center; 
 
-  justify-items: center;
-  align-items: center;
-  justify-content: space-between;
-  justify-items: center;
+  
 }
 
 .associateHolder {
-  max-height: 375px;
-  padding: 1rem;
-  flex: 0 0 30%;
+  padding: 4rem;
+  max-height: 450px;
+
 }
 
-.associate {
-  width: 250px;
-}
+
 
 .associateCard, .headshotWrapper{
-  width: 160px; 
-  height: 160px; 
+  width: 230px; 
+  height: 230px; 
 }
 
-.headshotWrapper{
-  position: relative;
-  transform: translate(32%, 25%);
 
-}
 
 .associateCard {
-  position: absolute; 
+  position: relative; 
   background-color: var(--light-grey);
+  transform: translate(5% , 0);
   padding:0.5rem;
 }
 
 .headshotWrapper :hover {
   background-color: var(--light-grey);
-  transform: translateY(-30px);
+  transform: translate(5%,-45px );
   transition-timing-function: ease-out;
   transition: 1s;
 }
@@ -357,23 +391,35 @@ h3 {
 .associatePocket {
   position: relative;
   left: 0;
-  transform: translate(22.5%, -10%);
+  transform: translate(0, -50%);
   z-index: 1;
-  width: 180px; 
-  height: 180px; 
+  width: 250px; 
+  height: 250px; 
 }
 
 .associateText {
-  position: relative;
-  transform: translate(0%, -250%);
+  width: 80%; 
+  position: relative; 
+  text-align: center;
+  transform: translate(9%, -320px); 
   z-index: 2;
 }
 
 .associateText h3,
 .associateText p,
 .associateText ul {
-  text-align: center;
+
+  
+  font-family: var(--tegomin); 
+
 }
+
+.associateText h3 {
+  font-size: 2rem; 
+  margin-bottom: 1rem
+}
+
+
 
 .associateText li {
   list-style-type: none;
