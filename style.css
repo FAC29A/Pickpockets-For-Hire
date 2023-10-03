@@ -152,20 +152,22 @@ ul > li > a {
   font-size: 1.4rem;
 }
 
-h1 {
-  font-size: 2.4rem;
-  color: var(--black);
-}
 h3 {
   font-size: 1.8rem;
 }
 
-.hero-p {
+
+#hero-text > h1 {
+  font-size: 2.4rem;
+  color: var(--black);
+}
+
+#hero-text > p {
   font-size: 1.4rem;
   color: var(--inida-yellow);
 }
 
-.hero {
+#hero {
   height: 60vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -180,7 +182,7 @@ h3 {
 }
 
 
-.hero-text {
+#hero-text {
   grid-column: 3 / 8;
   grid-row: 3 / 6;
 }
@@ -227,8 +229,8 @@ h3 {
 }
 .image-cropper {
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  width: 17rem;
+  height: 17rem;
   overflow: hidden;
   border-radius: 50%;
  
@@ -439,8 +441,26 @@ footer {
 
 
 @media only screen and (max-width: 900px) {
-  .hero {
-    height: 60vh;
+  #hero {
+   padding-top: 13rem; 
+  }
+
+  .hand {
+    grid-column: 5 / -2;
+    grid-row: 3 / -1;
+
+  }
+
+  .slit-top,
+  .slit-bottom {
+    grid-column: 3 / 7;
+    grid-row: 8 / 12;
+  }
+
+
+  #hero-text {
+    grid-column: 2 / 6;
+    grid-row: 1/ 6;
   }
 
   .content-element {
@@ -454,6 +474,20 @@ footer {
     gap: 1rem;
   }
 
+  .purse-images{
+    width: 200px; 
+    height: 200px; 
+  }
+  .image-cropper {
+    position: relative;
+    width: 14rem;
+    height: 14rem;
+    overflow: hidden;
+    border-radius: 50%;
+   
+    place-self:center; 
+  }
+
 
   .content-element > .text-1, .content-element > .text-2  {
  
@@ -465,7 +499,14 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .hero {
-    height: 40vh;
+  #hero {
+    padding-top:16rem; 
+   
+  }
+
+
+  #hero-text {
+    grid-column: 2 / 12;
+    grid-row: 1/ 12;
   }
 }
