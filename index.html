@@ -16,7 +16,8 @@
 <body>
   <header>
     <!-- navbar -->
-    <nav class="row justify-end center width-xl">
+    <div id="nav-wrapper" class="row justify-end center width-max pad3">
+    <nav>
       <ul class="row">
         <li>
           <a href="#about-us">Credentials</a>
@@ -32,33 +33,32 @@
         </li>
       </ul>
     </nav>
+  </div>
 
    <!-- where the hero section start  -->
-    <section class="hero center width-xl">
+    <section id="hero" class=" center width-xl pad9Top">
       
-        <div class="hero-text ">
-          <h1 class="hero-h1">Pickpocket for Hire    
+        <div id="hero-text">
+          <h1>Pickpocket for Hire    
           </h1>
-          <p class="hero-p">Strapline Text</p>
+          <p>Strapline Text</p>
         </div>
            
             <img
-            class="hand"
+            id="hand"
             src="images/hand .png"
             alt="">
           
             
               <img
-                class="slit-top"
-               
+                id="slit-top"
                 src="images/slit-top.png"
                 alt=""
               >
            
          
             <img
-              class="slit-bottom"
-            
+              id="slit-bottom"
               src="images/slit-bottom.png"
               alt="">
           
@@ -69,10 +69,10 @@
  
   <main class="stack-lg">
     <!--About-->
-    <section class="content-section center width-xl stack-xl pad3" id="about-us">
+    <section id="about-us" class="center width-xl stack-xl pad3" >
       <!-- article 1: about me  -->
-      <article class="content-element">
-        <div class="content-text text-1 stack-xxl" >
+      <article class="content-element"> 
+        <div class="content-text stack-xl" id="text-1">
           <div class="stack-sm ">
             <h2>About Us</h2>
             <h3>Info Header: Do you want to play?</h3>
@@ -83,19 +83,18 @@
       </div>
       
 
-        <div class="image-cropper image-1">
+        <div class="image-cropper" id="image-1">
           <img 
-          class="purple-purse-image"
+          class="purse-images"
           src="images/purse-red.jpg"
-          width="200"
-          height="200"
+     
           al="target a lady's red purse">  
       </div>
       </article>
 
        <!-- article 2: Lonodn's best   -->
        <article class="content-element">
-        <div class="content-text text-2 stack-xxl" >
+        <div class="content-text stack-xl" id="text-2">
           <div class="stack-sm ">
             <h2>London's best </h2>
             <h3>another article</h3>
@@ -106,12 +105,11 @@
       </div>
       
 
-        <div class="image-cropper image-2">
+        <div class="image-cropper" id="image-2">
           <img 
-          class="white-purse-image"
+          class="purse-images"
           src="images/purse-white.jpg"
-          width="200"
-          height="200"
+   
           al="now target a lady's white purse">  
       </div>
       </article>
@@ -128,15 +126,13 @@
           <div class="associate">
             <img class="associateCard"
               src="images/associate-1.png"
-              width="170"
-              height="170"
+        
               alt="A card showing one of our associates" 
             />
             
             <img class="associatePocket"
               src="images/pocket-red.png"
-              width="170"
-              height="170"
+    
               alt="A pocket"
             />
 
@@ -152,15 +148,13 @@
           <div class="associate">
             <img class="associateCard"
               src="images/associate-2.png"
-              width="170"
-              height="170"
+         
               alt="A card showing one of our associates" 
             />
             
             <img class="associatePocket"
               src="images/pocket-blush.png"
-              width="170"
-              height="170"
+      
               alt="A pocket"
             />
 
@@ -176,15 +170,13 @@
           <div class="associate">
             <img class="associateCard"
               src="images/associate-3.png"
-              width="170"
-              height="170"
+        
               alt="A card showing one of our associates" 
             />
             
             <img class="associatePocket"
               src="images/pocket-violet.png"
-              width="170"
-              height="170"
+        
               alt="A pocket"
             />
 
@@ -200,15 +192,13 @@
           <div class="associate">
             <img class="associateCard"
               src="images/associate-4.png"
-              width="170"
-              height="170"
+             
               alt="A card showing one of our associates" 
             />
             
             <img class="associatePocket"
               src="images/pocket-red.png"
-              width="170"
-              height="170"
+       
               alt="A pocket"
             />
 
@@ -224,15 +214,13 @@
           <div class="associate">
             <img class="associateCard"
               src="images/associate-5.png"
-              width="170"
-              height="170"
+           
               alt="A card showing one of our associates" 
             />
             
             <img class="associatePocket"
               src="images/pocket-blush.png"
-              width="170"
-              height="170"
+        
               alt="A pocket"
             />
 
@@ -248,15 +236,13 @@
           <div class="associate">
             <img class="associateCard"
               src="images/associate-6.png"
-              width="170"
-              height="170"
+      
               alt="A card showing one of our associates" 
             />
             
             <img class="associatePocket"
               src="images/pocket-violet.png"
-              width="170"
-              height="170"
+        
               alt="A pocket"
             />
 
@@ -322,9 +308,9 @@
     <h2>footer title </h2>
     
     <div class="social-media-group center width-xl row justify-center">
-      <img src="images/facebook.png" heigh="50" width="50">
-      <img src="images/instagram.png" heigh="50" width="50"> 
-      <img src="images/tiktok.png" heigh="40" width="40"> 
+      <img src="images/facebook.png" id="facebook-logo">
+      <img src="images/instagram.png" id="insta-logo"> 
+      <img src="images/tiktok.png" id="tiktok-logo"> 
     </div>
     
     <p>More footer text</p>
