@@ -291,11 +291,11 @@ h3 {
 }
 
 /* Associate section css */
-.associate-section {
+#associates {
   position: relative;
 }
 
-.associate-section h2 {
+#associates h2 {
   color: white;
 }
 
@@ -335,24 +335,15 @@ h3 {
 .associateCard {
   position: absolute; 
   background-color: var(--light-grey);
-  padding:0.5rem; 
-
+  padding:0.5rem;
 }
-
-
 
 .headshotWrapper :hover {
   background-color: var(--light-grey);
   transform: translateY(-30px);
   transition-timing-function: ease-out;
   transition: 1s;
- 
-
-
- 
 }
-
-
 
 .associatePocket {
   position: relative;
@@ -369,12 +360,15 @@ h3 {
   z-index: 2;
 }
 
-.associateText > h3,
-.associateText > p {
+.associateText h3,
+.associateText p,
+.associateText ul {
   text-align: center;
 }
 
-
+.associateText li {
+  list-style-type: none;
+}
 
 /* enquiry section css  */
 #brown-background {
