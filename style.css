@@ -53,6 +53,9 @@ html {
 .pad9Top {
   padding-top: 9rem;
 }
+.pad5Btm {
+  padding-bottom: 5rem; 
+}
 
 .width-sm {
   max-width: 20rem;
@@ -332,6 +335,8 @@ h3 {
   
 }
 
+
+
 .associate-section h2,
 #enquiries h2,
 #contact h2 {
@@ -455,9 +460,12 @@ h3 {
 label,
 input,
 textarea,
+legend, 
 button {
   display: block;
-  font-size: 1.4rem 
+  font-size: 1.4rem; 
+  font-family: var(--playfair); 
+  color: var(--light-grey)
   
 }
 
@@ -477,6 +485,7 @@ textarea {
 button {
   width: 60%;
   margin: auto;
+  background-color: var(--inida-yellow);
 }
 
 input[type="radio"],
@@ -532,7 +541,14 @@ input[type="checkbox"] {
 /* contact section css */
 .contact-text {
   text-align: center;
+  font-family: var(--tegomin); 
+  font-size: 1.5rem; 
+  color: var(--light-grey)
 }
+
+
+
+
 
 /* footer css */
 #black-background {
@@ -574,6 +590,7 @@ footer a {
 
 #footer-third {
   grid-column: 4 /5;
+  font-size: 1rem 
 }
 
 
@@ -692,6 +709,11 @@ footer a {
   #footer-third {
     grid-column: 2 /3;
     text-align: center; 
+  }
+
+  #hero {
+    height: 70vh;
+ 
   }
 }
 
