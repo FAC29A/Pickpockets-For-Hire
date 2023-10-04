@@ -246,9 +246,13 @@ h3 {
 #slit-bottom {
   max-height: 100%;
   max-width: 100%;
-  grid-column: 4 / 7;
+  grid-column: 7 / 9;
   grid-row: 7 / 12;
   transform: rotate(-10deg);
+}
+
+#slit-top{
+ z-index: -1; 
 }
 
 /* content section  */
