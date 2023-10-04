@@ -337,6 +337,14 @@ h3 {
   
 }
 
+.strong-sm, em{
+  font-family: var(--tegomin) !important;
+  font-style:italic !important;
+  font-weight: 300rem !important; 
+  color: var(--grey);
+  
+}
+
 
 
 .associate-section h2,
