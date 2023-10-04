@@ -264,6 +264,7 @@ h3 {
   overflow: hidden;
   border-radius: 50%;
   place-self:center; 
+  border: 7px double var(--blush) ; 
 }
 
 .content-element {
