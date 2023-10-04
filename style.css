@@ -584,6 +584,12 @@ footer a {
   flex: 0 0 45%;
 } */
 
+
+#attribution {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 #facebook-logo, #insta-logo{
   height: 50px; 
   width: 50px; 
