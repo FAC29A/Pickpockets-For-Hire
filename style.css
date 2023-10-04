@@ -251,6 +251,10 @@ h3 {
   transform: rotate(-10deg);
 }
 
+#slit-top{
+ z-index: -1; 
+}
+
 /* content section  */
 
 .purse-images{
