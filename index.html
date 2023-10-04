@@ -11,9 +11,9 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
       <div id="hero-text">
         <h1>Pickpockets for Hire</h1>
         
-        <p>No Article Left Unpocketed</p>
+        <p class="pad1Top">No Article Left Unpocketed</p>
       </div>
            
       <img id="hand" src="images/hand .png" alt="hand">
@@ -62,7 +62,8 @@
         <div class="content-text stack-xl" id="text-1">
           <h2>Procurers of Note</h2>
 
-          <p>Specialists in the social science of high-value article redistribution. No finer symposium of sleight-of-hand crafts to be found between Southwark & the Bow Bells.<br/><br/><strong>A matchless reputation in asset relocation!</strong></p>
+          <p>Specialists in the social science of high-value article redistribution. No finer symposium of sleight-of-hand crafts to be found between Southwark & the Bow Bells.<br/><br/>
+          <p class="strong">A matchless reputation in asset relocation!</p>
         </div>  
 
         <div class="image-cropper" id="image-1">
@@ -75,7 +76,8 @@
         <div class="content-text stack-xl" id="text-2">
           <h2>A Rich Diversity of Service</h2>
 
-          <p>Our associates cultivate their natural inquisitive proclivities into a wide-roving assemblage of discrete discretions. Do engage us in the related fields of larceny, Tommy knocking and Push-a-Shiv.<br/><br/><strong>No variance too burdensome!</strong></p>
+          <p>Our associates cultivate their natural inquisitive proclivities into a wide-roving assemblage of discrete discretions. Do engage us in the related fields of larceny, Tommy knocking and Push-a-Shiv.<br/><br/>
+          <p class="strong">No variance too burdensome!</strong>
         </div>
       
         <div class="image-cropper" id="image-2">
@@ -95,17 +97,20 @@
               <img class="associateCard" src="images/associate-1.png" alt="A card showing one of our associates"/>
             </div>
             
+            
             <img class="associatePocket" src="images/pocket-red.png" alt="A pocket"/>
 
-            <div class="associateText">
+            <div class="associateText blush">
               <h3>Arabella Nozzle</h3>
 
               <ul>
                 <li>Coquettery</li>
                 <li>Bamboozlement</li>
                 <li>"Quiet Work"</li>
+              
               </ul>
-            </div>
+            
+          </div>
           </div>        
         </div>
 
@@ -117,7 +122,7 @@
             
             <img class="associatePocket" src="images/pocket-blush.png" alt="A pocket"/>
 
-            <div class="associateText">
+            <div class="associateText violet">
               <h3>William FitzWilliam</h3>
               
               <ul>
@@ -137,7 +142,7 @@
             
             <img class="associatePocket" src="images/pocket-violet.png" alt="A pocket"/>
 
-            <div class="associateText">
+            <div class="associateText blush">
               <h3>Dora Haddock</h3>
               
               <ul>
@@ -157,7 +162,7 @@
             
             <img class="associatePocket" src="images/pocket-red.png" alt="A pocket"/>
 
-            <div class="associateText">
+            <div class="associateText blush">
               <h3>Jebediah Scratch</h3>
               
               <ul>
@@ -175,9 +180,10 @@
               <img class="associateCard" src="images/associate-5.png" alt="A card showing one of our associates"/>
             </div>
             
+
             <img class="associatePocket" src="images/pocket-blush.png" alt="A pocket"/>
 
-            <div class="associateText">
+            <div class="associateText violet">
               <h3>Forget-Me-Not Nightshirt</h3>
               
               <ul>
@@ -197,7 +203,7 @@
 
             <img class="associatePocket" src="images/pocket-violet.png" alt="A pocket"/>
 
-            <div class="associateText">
+            <div class="associateText blush">
               <h3>Erstwhile Crumpkin</h3>
               
               <ul>
@@ -246,7 +252,7 @@
       </section>
 
       <!--Correspondence-->
-      <section class="center width-xl stack-xl pad2" id="contact">
+      <section class="center width-xl stack-xl pad2 pad5Btm" id="contact">
         <h2>Correspondence</h2>
 
         <div class="row">
@@ -261,29 +267,30 @@
     </div>
   </main>
 
-  <footer class="center width-xl stack-lg">
-    <!--Main Row-->
-    <div class="row justify-center">
-      <div class="footerSm">
-        <p><strong>Established 1847</strong></p>
+  <footer class="center width-xl">
+    
+      <p id="footer-first" class="strong">
+        Established 1847
+      </p>
+    
+    
+      <div id="footer-second" class="social-media-group center width-xl row justify-center">
+        <img src="images/facebook.png" id="facebook-logo">
+        <img src="images/instagram.png" id="insta-logo"> 
+        <img src="images/tiktok.png" id="tiktok-logo"> 
       </div>
-      
-      <div class="footerLg">
-        <div class="social-media-group center width-xl row justify-center">
-          <img src="images/facebook.png" id="facebook-logo">
-          <img src="images/instagram.png" id="insta-logo"> 
-          <img src="images/tiktok.png" id="tiktok-logo"> 
-        </div>
-      </div>
-      
-      <div class="footerSm">
-        <p>Indebted to the services of Messrs. <a href="https://github.com/luciensday">Lucien Lin</a> & <a href="https://github.com/JasonWarrenUK">Jason Warren</a></p>
-      </div>
-    </div>
+    
+    
+    <div id="footer-third">
+      <p class="pad5Btm">Indebted to the services of Messrs. <a href="https://github.com/luciensday">Lucien Lin</a> & <a href="https://github.com/JasonWarrenUK">Jason Warren</a></p>
+  
+
 
     <!--Attributions-->
     <div id="attribution" class="">
       <p>FavIcon: <a href="https://www.flaticon.com/free-icons/knife" title="knife icons">Muhammad_Usman</a> via Flaticon</p>
+    </div>
+
     </div>
   </footer>
 
