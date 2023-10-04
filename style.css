@@ -461,7 +461,7 @@ input[type="checkbox"] {
 footer {
   text-align: center;
   padding: 2rem;
-  height: 30rem;
+  height: auto;
 }
 
 .footerSm {
@@ -471,10 +471,15 @@ footer {
   flex: 0 0 45%;
 }
 
-#facebook-logo,
-#insta-logo {
-  height: 50px;
-  width: 50px;
+
+#attribution {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#facebook-logo, #insta-logo{
+  height: 50px; 
+  width: 50px; 
 }
 #tiktok-logo {
   height: 50px;
